@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="bg-white">
-      <div className="text-center p-6">
+      <div className="text-center p-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
         <span>X03</span>
       </div>
       <main>

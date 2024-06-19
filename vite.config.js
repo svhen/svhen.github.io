@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "https://svhen.github.io/svhenx",
+  base: "/svhenx/",
   server: {
     // this ensures that the browser opens upon server start
     open: true,
