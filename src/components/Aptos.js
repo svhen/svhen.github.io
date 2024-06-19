@@ -1,4 +1,4 @@
-const secondaryFeatures = [
+const finishedApartmentFeatures = [
   {
     name: "Cielo raso.",
     description: "Drywall pintado de blanco.",
@@ -26,8 +26,27 @@ const secondaryFeatures = [
   },
 ];
 
+const almostFinishedApartmentFeatures = [
+  {
+    name: "Paredes.",
+    description: "Paredes pintadas con una mano de blanco.",
+  },
+  {
+    name: "Baños.",
+    description: "Baño social con sanitario y céramica en la ducha.",
+  },
+  {
+    name: "Hidráulicos.",
+    description: "Puntos hidráulicos en cocina, patio y baños.",
+  },
+  {
+    name: "Accesorios.",
+    description: "Accesorios eléctricos, más una luz led en cada espacio.",
+  },
+];
+
 export default function Aptos(props) {
-  const { area, title, image } = props;
+  const { area, title, image, finishedApartment } = props;
   return (
     <div className="mt-32 sm:mt-56 bg-gray-900 py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -54,17 +73,8 @@ export default function Aptos(props) {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-        <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-          {secondaryFeatures.map((feature) => (
-            <div key={feature.name} className="relative pl-9">
-              <dt className="inline font-semibold text-white">
-                {feature.name}
-              </dt>{" "}
-              <dd className="inline">{feature.description}</dd>
-            </div>
-          ))}
-        </dl>
+      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8 text-center">
+        <p className="mt-2 text-white">Imágenes de referencia</p>
       </div>
     </div>
   );

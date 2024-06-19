@@ -5,11 +5,24 @@ export default function Design(props) {
       <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
           <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+            <div className="mb-4">
+              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Acabados
+              </h2>
+              <p className="mt-6 text-xl leading-8 text-gray-600">
+                Cielo raso. Zonas húmedas Cerámica en ducha y piso de baños,
+                cocina y patio de ropas. Ventanas en aluminio. Pisos Cerámica o
+                laminado a elección en el resto del apartamento
+              </p>
+            </div>
+
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Acabados
+              Acabados mínimos
             </h2>
+
             <p className="mt-6 text-xl leading-8 text-gray-600">
-              Imágenes de referencia acabados {type}.
+              Paredes pintadas con una mano de blanco. Baño social con sanitario
+              y céramica en la ducha.
             </p>
           </div>
           <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
