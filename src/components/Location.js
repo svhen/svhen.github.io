@@ -71,7 +71,7 @@ export default function Location() {
           <div className="mt-8 flex border-t border-gray-100 pt-8">
             <a
               href="#"
-              className="text-sm font-semibold leading-6 text-blue-600 hover:text-blue-500"
+              className="text-xl font-semibold leading-6 text-blue-600 hover:text-blue-500"
             >
               Contactar agente inmobiliario{" "}
               <span aria-hidden="true">&rarr;</span>

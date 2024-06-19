@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Hero from "./components/Hero";
 import Location from "./components/Location";
 import Footer from "./components/Footer";
@@ -12,9 +11,10 @@ function App() {
       <Hero />
       <Timeline />
       <Aptos
-        area="71.46 m2"
-        title="Tipo 1: Apartamento con acabados"
+        area="Apartamento tipo 1"
+        title="71.46m2 $ 150.000.000"
         image="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+        price="2 baños, 3 habitaciones, cocina, sala comedor, patio de ropas"
       />
       <Design
         type="apartamento Tipo 1"
@@ -26,7 +26,8 @@ function App() {
       <Aptos
         area="55.46 m2"
         title="Apartamento Tipo 2"
-        image="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"        
+        image="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+        price="Desde $ 100.000.000"
       />
       <Design
         type="apartamento Tipo 2"
@@ -38,7 +39,8 @@ function App() {
       <Aptos
         area="20.46 m2"
         title="Apartamento Tipo 3"
-        image="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"        
+        image="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+        price="Desde $ 50.000.000"
       />
       <Design
         type="apartamento Tipo 3"
@@ -50,7 +52,7 @@ function App() {
       <Aptos
         area="2.5 m2 - 11,75m2"
         title="Parqueadero de moto y carro"
-        image="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"        
+        image="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
       />
       <Location />
       <Footer />

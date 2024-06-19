@@ -66,7 +66,7 @@ export default function Hero() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="#"
-                      className="rounded-md border px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                      className="rounded-md border px-3.5 py-2.5 text-2xl font-semibold text-black shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                     >
                       Contactar agente inmobiliario{" "}
                       <span aria-hidden="true">&rarr;</span>

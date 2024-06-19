@@ -1,52 +1,5 @@
-const finishedApartmentFeatures = [
-  {
-    name: "Cielo raso.",
-    description: "Drywall pintado de blanco.",
-  },
-  {
-    name: "Zonas húmedas y otros.",
-    description:
-      "Cerámica en ducha y piso de baños, cocina y patio de ropas. Ventanas en aluminio.",
-  },
-  {
-    name: "Pisos.",
-    description: "Cerámica o laminado a elección en el resto del apartamento.",
-  },
-  {
-    name: "Baños.",
-    description: "Ducha eléctrica, lavamanos, sanitario.",
-  },
-  {
-    name: "Cocinas.",
-    description: "Mesón, barra americana.",
-  },
-  {
-    name: "Patio de ropas.",
-    description: "Lavadero. ",
-  },
-];
-
-const almostFinishedApartmentFeatures = [
-  {
-    name: "Paredes.",
-    description: "Paredes pintadas con una mano de blanco.",
-  },
-  {
-    name: "Baños.",
-    description: "Baño social con sanitario y céramica en la ducha.",
-  },
-  {
-    name: "Hidráulicos.",
-    description: "Puntos hidráulicos en cocina, patio y baños.",
-  },
-  {
-    name: "Accesorios.",
-    description: "Accesorios eléctricos, más una luz led en cada espacio.",
-  },
-];
-
 export default function Aptos(props) {
-  const { area, title, image, finishedApartment } = props;
+  const { area, title, image, price } = props;
   return (
     <div className="mt-32 sm:mt-56 bg-gray-900 py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -56,6 +9,9 @@ export default function Aptos(props) {
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             {title}
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            {price}
           </p>
         </div>
       </div>
@@ -74,7 +30,12 @@ export default function Aptos(props) {
         </div>
       </div>
       <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8 text-center">
-        <p className="mt-2 text-white">Imágenes de referencia</p>
+        <a
+          href="#"
+          className="rounded-md border px-3.5 py-2.5 text-2xl font-semibold text-white shadow-sm hover:bg-black-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+        >
+          Contactar agente inmobiliario <span aria-hidden="true">&rarr;</span>
+        </a>
       </div>
     </div>
   );

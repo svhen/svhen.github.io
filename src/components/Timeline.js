@@ -1,20 +1,26 @@
 const timeline = [
   {
-    name: "Cimentación & Estructura",
-    description: "Se termina la cimentación y estructura del edificio.",
-    date: "Mar 2025",
+    name: "Abono 10%",
+    description: "Para apartar tu unidad.",
+    date: "Separación",
     dateTime: "2025-03",
   },
   {
-    name: "Acabados de unidades residenciales",
-    description: "Se terminan los acabados de las unidades residenciales.",
-    date: "Oct 2025",
+    name: "Abono 5%",
+    description: "Mes 1.",
+    date: "Mes 1",
     dateTime: "2025-10",
   },
   {
-    name: "Entrega de apartamentos & parqueaderos",
-    description: "Se entregan los apartamentos y parqueaderos.",
-    date: "Dec 2025",
+    name: "Abono 15%",
+    description: "Diferido a 12 meses sin intereses.",
+    date: "12 meses",
+    dateTime: "2025-12",
+  },
+  {
+    name: "Abono 70%",
+    description: "A la firma de escritura.",
+    date: "Firma escritura",
     dateTime: "2025-12",
   },
 ];
@@ -22,7 +28,7 @@ const timeline = [
 export default function Timeline() {
   return (
     <div className="mx-auto -mt-8 max-w-7xl px-6 lg:px-8">
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
         {timeline.map((item) => (
           <div key={item.name}>
             <time
